@@ -1,4 +1,6 @@
-for file in ['os.sh', 'php8.sh', 'composer.sh']
+BASEDIR=$(dirname $0)
+
+for file in "os.sh" "php8.sh" "composer.sh";
 do
-        `./$file`
+       sh "$PWD/$file"
 done
